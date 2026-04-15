@@ -4,8 +4,6 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase'
 
-export const dynamic = 'force-dynamic'
-
 export default function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -157,7 +155,7 @@ export default function LoginPage() {
         <p className="text-center text-muted text-sm mt-6 animate-fade-in stagger-2" style={{ opacity: 0 }}>
           0.5% weekly compound interest calculator
         </p>
-        </div>
-      </main>
+      </div>
+    </main>
   )
 }
