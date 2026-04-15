@@ -11,7 +11,6 @@ import DepositForm from '@/components/DepositForm'
 import DepositTable from '@/components/DepositTable'
 import ClosedPositionsTable, { ClosedPosition } from '@/components/ClosedPositionsTable'
 
-export const dynamic = 'force-dynamic'
 
 function DashboardContent() {
   const [deposits, setDeposits] = useState<Deposit[]>([])
