@@ -63,12 +63,12 @@ export default function LoginPage() {
               />
             </svg>
           </div>
-          <h1 className="text-3xl font-bold tracking-tight">Altura Accounting</h1>
-          <p className="text-muted mt-2">Fund deployment tracking system</p>
+          <h1 className="text-3xl font-bold tracking-tight">Inessa Holdings</h1>
+          <p className="text-muted mt-2">Fund Deployment Tracking System</p>
         </div>
 
         {/* Login Card */}
-        <div className="card animate-fade-in stagger-1" style={{ opacity: 0 }}>
+        <div className="card animate-fade-in stagger-1">
           <h2 className="text-xl font-semibold mb-6">
             {isSignUp ? 'Create Account' : 'Welcome Back'}
           </h2>
@@ -152,8 +152,8 @@ export default function LoginPage() {
         </div>
 
         {/* Footer */}
-        <p className="text-center text-muted text-sm mt-6 animate-fade-in stagger-2" style={{ opacity: 0 }}>
-          0.5% weekly compound interest calculator
+        <p className="text-center text-muted text-sm mt-6 animate-fade-in stagger-2">
+          Fund Deployment Tracking System
         </p>
       </div>
     </main>
