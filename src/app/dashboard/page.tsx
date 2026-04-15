@@ -1,5 +1,3 @@
-export const dynamic = 'force-dynamic';
-
 'use client'
 
 import { useEffect, useState, useCallback } from 'react'
@@ -10,7 +8,6 @@ import AuthGuard from '@/components/AuthGuard'
 import DepositForm from '@/components/DepositForm'
 import DepositTable from '@/components/DepositTable'
 import ClosedPositionsTable, { ClosedPosition } from '@/components/ClosedPositionsTable'
-
 
 function DashboardContent() {
   const [deposits, setDeposits] = useState<Deposit[]>([])
