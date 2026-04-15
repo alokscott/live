@@ -15,13 +15,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Altura Accounting",
-  description: "Fund deployment tracking with weekly compound interest",
+  title: "Inessa Accounting",
+  description: "Fund deployment tracking system",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: Readonly<{  
   children: React.ReactNode;
 }>) {
   return (
