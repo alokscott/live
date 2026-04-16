@@ -153,7 +153,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <p className="text-center text-muted text-sm mt-6 animate-fade-in stagger-2" style={{ opacity: 0 }}>
-          <img src="https://github.com/alokscott/live/blob/main/public/Inessa_logo.svg"></img>
+          <img src="https://framer.com/projects/Inessa-copy--Jz5bG6TsltpYPMw3YqqG-aCnCS?node=qJVu64Hjx"></img>
         </p>
       </div>
     </main>
