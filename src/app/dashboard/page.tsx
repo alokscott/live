@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import { createClient, Deposit, Closure } from '@/lib/supabase'
 import { exportToPdf } from '@/lib/exportPdf'
 import AuthGuard from '@/components/AuthGuard'
@@ -77,13 +78,17 @@ function DashboardContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-accent-muted rounded-xl flex items-center justify-center">
-                <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+              <div className="w-10 h-10 flex items-center justify-center">
+                <Image
+                  src="/Inessa_logo.svg"
+                  alt="Innesa"
+                  width={40}
+                  height={40}
+                  priority
+                />
               </div>
               <div>
-                <h1 className="text-lg font-semibold">Altura Accounting</h1>
+                <h1 className="text-lg font-semibold">Innesa Holdings</h1>
                 <p className="text-xs text-muted">Fund Tracker</p>
               </div>
             </div>
