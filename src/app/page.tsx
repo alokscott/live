@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase'
 
 export default function LoginPage() {
@@ -48,20 +49,14 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         {/* Logo and Title */}
         <div className="text-center mb-8 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-muted rounded-2xl mb-4">
-            <svg
-              className="w-8 h-8 text-accent"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+          <div className="inline-flex items-center justify-center mb-4">
+            <Image
+              src="/Inessa_logo.svg"
+              alt="Innesa Holdings"
+              width={120}
+              height={120}
+              priority
+            />
           </div>
           <h1 className="text-3xl font-bold tracking-tight">Innesa Holdings</h1>
           <p className="text-muted mt-2">Fund deployment tracking system</p>
@@ -153,7 +148,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <p className="text-center text-muted text-sm mt-6 animate-fade-in stagger-2" style={{ opacity: 0 }}>
-          
+          0.5% weekly compound interest calculator
         </p>
       </div>
     </main>
